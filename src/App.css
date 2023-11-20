@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+@import url('./fonts/fonts.css');
+
+body {
+  font-family: 'Tajawal Regular', sans-serif !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --theme-dark: #040404;
+  --theme-dark-80: #040404cc;
+  --theme-dark-40: #04040466;
+  --theme-light: #F1F1F1;
+  --theme-accent: #3B486D;
+  --theme-gradient-start: #2727F5;
+  --theme-gradient-end: #001671;
+  --text-gray: #858688;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div {
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.page {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: var(--theme-accent);
 }
 
-.App-link {
-  color: #61dafb;
+.app {
+  max-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  max-width: 1920px;
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+  height: 100%;
+}
+
+.contentNoFitNavbar {
+  margin-left: 150px;
 }

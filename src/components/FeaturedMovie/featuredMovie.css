@@ -1,0 +1,103 @@
+.featuredMovie {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.featuredMovie .movieInfo {
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+}
+
+.featuredMovieVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.featuredMovieVideo > video {
+  object-fit: cover;
+}
+
+.featuredMovie .movieInfo > h3 {
+  font-family: "Tajawal bold", sans-serif !important;
+  font-size: 24px;
+  color: var(--text-gray);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.movieTitle {
+  position: relative;
+  max-width: 680px;
+  width: 680px;
+  height: 84px;
+}
+
+.movieTitle > img {
+  position: absolute;
+  object-fit: contain;
+}
+
+.moviesOtherDetails {
+  display: flex;
+  margin: 18px 0 15px;
+}
+
+.moviesOtherDetails > p {
+  display: flex;
+  color: var(--theme-light);
+  font-size: 30px;
+  margin: 0 18px 0 0;
+}
+
+.moviesOtherDetails > p:last-child {
+  margin: 0;
+}
+
+.movieDescription {
+  font-size: 32px;
+  margin: 0;
+  color: var(--theme-light);
+}
+
+.buttonContainer {
+  display: flex;
+  margin-top: 25px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Tajwal Bold", sans-serif !important;
+  font-size: 32px;
+  width: 240px;
+  padding: 11px 11px 18px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.button:nth-child(odd) {
+  margin-right: 18px;
+}
+
+.button.light {
+  background-color: var(--theme-light);
+  color: var(--theme-dark);
+}
+
+.button.dark {
+  background: var(--theme-gradient-start);
+  background: linear-gradient(
+    90deg,
+    var(--theme-gradient-start) 0%,
+    var(--theme-gradient-end) 100%
+  );
+  color: var(--theme-light);
+}
